@@ -1,0 +1,29 @@
+package hw2;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class AssertExp1Test {
+
+	@Test
+	public void testMinValue() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testMinPosition() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNumUnique() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testRemoveDuplicates() {
+		fail("Not yet implemented");
+	}
+
+}
