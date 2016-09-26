@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 4 elements to &apos;hw-01-alan/src/hw1&apos;&#x0A;- Original project: &apos;hw-01&apos;&#x0A;- Destination element: &apos;hw-01-alan/src/hw1&apos;&#x0A;- Original elements:&#x0A;     hw1.InventorySet.java&#x0A;     hw1.InventorySetTest.java&#x0A;     hw1.VideoObj.java&#x0A;     hw1.Record.java" description="Copy compilation units" destination="=hw-01-alan/src&lt;hw1" element1="/src&lt;hw1{InventorySet.java" element2="/src&lt;hw1{InventorySetTest.java" element3="/src&lt;hw1{VideoObj.java" element4="/src&lt;hw1{Record.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1473957125829" units="4" version="1.0"/>
-</session>
