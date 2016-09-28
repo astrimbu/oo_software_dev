@@ -123,16 +123,16 @@ public class MyLinkedTest {
 		assert b.size() == 0;
 		
 		for (int i = 1; i < 5; i++) {
-	        b.add(i);
-	        b.add(i);
-	    }
+		    b.add(i);
+		    b.add(i);
+		}
 		for (int i = 1; i < 5; i++) {
-	        b.add(i);
-	        b.add(i);
-	        b.add(i);
-	        b.add(i);
-	        b.add(i);
-	    }
+		    b.add(i);
+		    b.add(i);
+		    b.add(i);
+		    b.add(i);
+		    b.add(i);
+		}
 		b.remove(9);
 		b.remove(3);
 		b.remove(1);
