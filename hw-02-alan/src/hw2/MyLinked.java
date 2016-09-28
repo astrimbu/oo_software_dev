@@ -84,11 +84,11 @@ public class MyLinked {
         while (helper.next != null) {
             if (helper.next.item == item) {
             	if (helper.next.equals(first)) {
-					first = first.next;
-					helper.next = first;
+                    first = first.next;
+                    helper.next = first;
             	} else {
-					Node next = helper.next;
-					helper.next = next.next;
+                    Node next = helper.next;
+                    helper.next = next.next;
             	}
             	N--;
             } else helper = helper.next;
