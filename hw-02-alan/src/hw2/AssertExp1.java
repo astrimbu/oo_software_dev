@@ -104,7 +104,6 @@ public class AssertExp1 {
 	 * 11, 22, 33, 44, 44, 44, 44, 44, 55, 55, 66, 77, 88 })
 	 */
 	public static double[] removeDuplicates(double[] list) {
-		// Typo in instructions: "removeDuplicates returns the *number of unique values*" 
 		if (list.length < 2) return list;
 		int j = 0;
 		int i = 1;

@@ -44,23 +44,25 @@ public class MyLinked {
 
     // delete the kth element
     public void delete (int k) {
-    	// doesn't this method already exist in a library, why am I rewriting it
         if (k < 0 || k >= N) throw new IllegalArgumentException ();
         Node temp = first;
         if (k == 0) {
             first = temp.next;
+            N--;
             return;
         }
         for (int i = 0; i < k-1; i++) temp = temp.next;
         if (temp == null || temp.next == null) return;
         Node next = temp.next.next;
         temp.next = next;
+        N--;
         assert checkInvariants();
     }
 
     // reverse the list "in place"... without creating any new nodes
     public void reverse () {
     	if (first == null) return;
+    	if (this.size() == 1) return;
         Node current = first;
         Node next = first.next;
         while (next != null) {
@@ -78,14 +80,18 @@ public class MyLinked {
     public void remove (double item) {
     	Node helper = new Node();
         helper.next = first;
-        Node iteratorNode = helper;
      
-        while (iteratorNode.next != null) {
-            if (iteratorNode.next.item == item) {
-            	Node next = iteratorNode.next;
-            	iteratorNode.next = next.next; 
-            }
-            else iteratorNode = iteratorNode.next;
+        while (helper.next != null) {
+            if (helper.next.item == item) {
+            	if (helper.next.equals(first)) {
+            		first = first.next;
+            		helper.next = first;
+            	} else {
+	            	Node next = helper.next;
+	            	helper.next = next.next;
+            	}
+            	N--;
+            } else helper = helper.next;
         }
         assert checkInvariants();
     }
