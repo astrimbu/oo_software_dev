@@ -79,9 +79,9 @@ public class MyLinkedTest {
 		assert b.first.next.item == 1;
 		
 		for (int i = 3; i < 7; i++) {
-	        b.add(i);
-	        b.add(i);
-	    }
+		    b.add(i);
+		    b.add(i);
+		}
 		assert b.first.item == 6;
 		assert b.first.next.item == 6;
 		assert b.first.next.next.item == 5;
